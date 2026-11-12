@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="assets/_next-static-css-app-layout.css" data-precedence="next_static/css/app/layout.css"><link rel="stylesheet" href="assets/_next-static-css-app--app--dashboard-finance-page.css" data-precedence="next_static/css/app/(app)/dashboard/finance/page.css"><link rel="preload" href="assets/_next-static-css-app--app--dashboard-finance-page.css" as="style"><title>SANDRA.IA — AI Business Operating System</title><meta name="description" content="Understand your business data, calculate KPIs, and interact with your AI Commercial Analyst."><link rel="icon" href="assets/media/icon.svg" type="image/svg+xml" sizes="any"><style type="text/css" data-styled-jsx="">.cgc .fd-rows{display:grid;gap:8px}.cgc .fd-row{display:grid;grid-template-columns:150px 1fr 70px;gap:8px;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;font-size:10px}.cgc .fd-row strong{text-align:right}.cgc .fd-track{height:18px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background:var(--surface2);overflow:hidden}.cgc .fd-fill{height:100%;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background:-webkit-linear-gradient(left,var(--blue),var(--purple));background:-moz-linear-gradient(left,var(--blue),var(--purple));background:-o-linear-gradient(left,var(--blue),var(--purple));background:linear-gradient(90deg,var(--blue),var(--purple))}.cgc .fd-status{display:-webkit-inline-box;display:-webkit-inline-flex;display:-moz-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:5px}.cgc .fd-status:before{content:"";width:7px;height:7px;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;background:var(--good)}.cgc .fd-status.Medium:before{background:var(--warn)}.cgc .fd-status.High:before{background:var(--bad)}.cgc .fd-chart{height:210px}.cgc .fd-chart svg{width:100%;height:100%;overflow:visible}.cgc .fd-chart text{font-size:9px;fill:var(--muted)}.cgc .fd-bad{color:var(--bad);font-weight:650}.cgc .fd-warn{color:var(--warn);font-weight:650}</style><style type="text/css" data-styled-jsx="">.cgc .askchat{-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;min-height:0;padding:12px 14px 10px;gap:8px}.cgc .ask-log{-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;overflow:auto;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:12px;padding-right:2px}.cgc .ask-empty p{font-size:12px;color:var(--muted);margin:4px 0 10px;line-height:1.45}.cgc .ask-chips{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:6px;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.cgc .ask-chips button{border:1px solid var(--line);background:var(--surface);-webkit-border-radius:999px;-moz-border-radius:999px;border-radius:999px;padding:5px 11px;font-size:11px;color:var(--text);cursor:pointer;text-align:left}.cgc .ask-chips button:hover{border-color:var(--accent);color:var(--accent)}.cgc .ask-chips.compact button{font-size:10px;padding:3px 9px;color:var(--muted)}.cgc .ask-turn{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:6px}.cgc .ask-q{-webkit-align-self:flex-end;-ms-flex-item-align:end;align-self:flex-end;max-width:85%;background:var(--accent);color:#fff;-webkit-border-radius:12px 12px 2px 12px;-moz-border-radius:12px 12px 2px 12px;border-radius:12px 12px 2px 12px;padding:8px 11px;font-size:12px}.cgc .ask-answer{-webkit-align-self:flex-start;-ms-flex-item-align:start;align-self:flex-start;max-width:95%;background:var(--surface);border:1px solid var(--line);-webkit-border-radius:12px 12px 12px 2px;-moz-border-radius:12px 12px 12px 2px;border-radius:12px 12px 12px 2px;padding:10px 12px;display:grid;gap:6px}.cgc .ask-text{margin:0;font-size:12px;white-space:pre-line;line-height:1.5}.cgc .ask-err{margin:0;font-size:11px;color:var(--bad)}.cgc .ask-drill{justify-self:start;border:1px solid var(--accent);background:#fff;color:var(--accent);-webkit-border-radius:7px;-moz-border-radius:7px;border-radius:7px;padding:4px 9px;font-size:10px;font-weight:650;cursor:pointer}.cgc .ask-form{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:8px;background:var(--surface);border:1px solid var(--line);-webkit-border-radius:12px;-moz-border-radius:12px;border-radius:12px;padding:6px}.cgc .ask-form input{-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;border:0;outline:none;font-size:13px;background:transparent;color:var(--text);padding:0 6px;min-width:0}.cgc .ask-form button{border:0;background:var(--accent);color:#fff;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;padding:8px 16px;font-size:12px;font-weight:650;cursor:pointer}.cgc .ask-form button:disabled{opacity:.45;cursor:default}.cgc .ask-foot{margin:0;font-size:10px;color:var(--muted);text-align:center}</style><style type="text/css" data-styled-jsx="">
+.cgc{--bg:#f4f6f9;--surface:#ffffff;--surface2:#f7f9fc;--text:#172033;--muted:#667085;--line:#e3e8ef;--nav:#101828;--navText:#f7f9fc;--accent:#5577ee;--accentSoft:#edf1ff;--good:#16a36a;--warn:#e49b25;--bad:#db4d57;--blue:#5577ee;--purple:#8b62d9;--cyan:#1f9fb2;--shadow:0 16px 50px rgba(16,24,40,.10);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);width:100%;}
+.cgc *{box-sizing:border-box}
+.cgc button,.cgc select,.cgc input{font:inherit}
+.cgc .app{background:var(--bg);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;min-height:760px}
+.cgc .topbar{display:flex;align-items:center;gap:14px;background:var(--nav);color:var(--navText);padding:10px 16px}
+.cgc .brand{display:flex;align-items:center;gap:8px;flex:none;font-weight:700;letter-spacing:-.01em;font-size:13px;white-space:nowrap}
+.cgc .brand b{font-weight:900;letter-spacing:-.02em}
+.cgc .brand-mark{display:grid;place-items:center;width:26px;height:26px;border-radius:8px;background:linear-gradient(145deg,#6e8cff,#885ee2);font-size:11px}
+.cgc .topnav{display:flex;flex-wrap:wrap;gap:2px;flex:1;min-width:0;align-items:center;overflow:hidden}
+.cgc .topnav button{border:0;background:transparent;color:#aeb8c7;padding:5px 9px;border-radius:7px;cursor:pointer;white-space:nowrap;font-size:12px;line-height:1.3}
+.cgc .topnav button:hover{color:#fff}
+.cgc .topnav button.active{background:#263142;color:#fff}
+.cgc .topnav-sep{width:1px;height:16px;background:#2f3a4c;margin:0 5px;flex:none}
+.cgc .ai-status{display:flex;align-items:center;gap:6px;color:#c8d1df;font-size:11px;white-space:nowrap;flex:none}
+.cgc .ai-dot{width:8px;height:8px;border-radius:50%;background:#49d39a;box-shadow:0 0 0 4px rgba(73,211,154,.12)}
+.cgc .toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px 12px}
+.cgc .heading h1{font-size:22px;line-height:1.1;margin:0 0 5px;letter-spacing:-.025em;font-weight:700}
+.cgc .heading p{font-size:12px;color:var(--muted);margin:0}
+.cgc .filters{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.cgc .filters select{color:var(--text);background:var(--surface);border:1px solid var(--line);padding:8px 28px 8px 10px;border-radius:8px;font-size:12px}
+.cgc .ask-open{display:inline-flex;align-items:center;gap:7px;border:0;border-radius:8px;padding:8px 13px;font-size:12px;font-weight:650;color:#fff;background:linear-gradient(135deg,#6e8cff,#885ee2);cursor:pointer;box-shadow:0 4px 14px rgba(110,140,255,.35)}
+.cgc .ask-open:hover{filter:brightness(1.07)}
+.cgc .ask-overlay{position:fixed;inset:0;z-index:45;background:rgba(16,24,40,.35);display:flex;justify-content:flex-end}
+.cgc .ask-drawer{width:min(480px,100%);height:100%;background:var(--bg);box-shadow:-20px 0 50px rgba(16,24,40,.18);display:flex;flex-direction:column;animation:cgcSlide .18s ease-out}
+@keyframes cgcSlide{from{transform:translateX(24px);opacity:.4}to{transform:none;opacity:1}}
+.cgc .ask-drawer-head{display:flex;align-items:center;gap:10px;background:var(--nav);color:var(--navText);padding:14px 16px}
+.cgc .ask-drawer-head div{flex:1;display:flex;flex-direction:column}
+.cgc .ask-drawer-head strong{font-size:14px}
+.cgc .ask-drawer-head small{font-size:11px;color:#aeb8c7}
+.cgc .ask-drawer-head button{border:0;background:transparent;color:#aeb8c7;font-size:15px;cursor:pointer}
+.cgc .content{padding:0 22px 24px}
+.cgc .kpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:8px 0 12px}
+.cgc .kpi{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px;min-width:0;text-align:left;color:inherit}
+.cgc button.kpi{cursor:pointer}
+.cgc button.kpi:hover{border-color:var(--accent)}
+.cgc .kpi-head{display:flex;justify-content:space-between;gap:5px;color:var(--muted);font-size:11px;margin-bottom:10px}
+.cgc .kpi-value{font-size:22px;font-weight:720;letter-spacing:-.035em;white-space:nowrap}
+.cgc .kpi-value.na{color:var(--muted);font-size:16px}
+.cgc .kpi-meta{display:flex;align-items:center;justify-content:space-between;gap:6px;font-size:10px;margin-top:7px;color:var(--muted)}
+.cgc .delta{font-weight:650}
+.cgc .delta.good{color:var(--good)} .cgc .delta.bad{color:var(--bad)} .cgc .delta.warn{color:var(--warn)}
+.cgc .progress{height:4px;background:var(--line);border-radius:4px;overflow:hidden;margin-top:8px}
+.cgc .progress span{display:block;height:100%;background:var(--accent)}
+.cgc .kpi-star{color:var(--warn)}
+.cgc .proc-link{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:650;color:var(--blue);text-decoration:none;border:1px solid var(--line);border-radius:7px;padding:5px 9px;background:var(--surface)}
+.cgc .proc-link:hover{border-color:var(--blue)}
+.cgc .proc-links{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 12px}
+.cgc .proc-links span{font-size:10px;color:var(--muted)}
+.cgc .proxy-tag{font-size:8px;font-weight:700;text-transform:uppercase;color:var(--purple);background:#f1ebfc;border-radius:4px;padding:0 4px}
+.cgc .grid-main{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(270px,.85fr);gap:12px}
+.cgc .stack{display:grid;gap:12px;align-content:start}
+.cgc .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;min-width:0}
+.cgc .card-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:12px}
+.cgc .card-title{font-size:13px;font-weight:700;margin:0}
+.cgc .card-sub{font-size:10px;color:var(--muted);margin:3px 0 0}
+.cgc .chip{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line);border-radius:999px;padding:4px 7px;color:var(--muted);font-size:9px;white-space:nowrap}
+.cgc .legend{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:9px}
+.cgc .legend span{display:flex;align-items:center;gap:5px}
+.cgc .swatch{width:8px;height:8px;border-radius:2px;display:inline-block}
+.cgc .chart-wrap{position:relative;height:205px}
+.cgc .chart-wrap svg{width:100%;height:100%;overflow:visible}
+.cgc .chart-wrap text{font-family:inherit;font-size:9px;fill:var(--muted)}
+.cgc .gridline{stroke:var(--line);stroke-width:1}
+.cgc .actual{fill:none;stroke:var(--blue);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.cgc .budget{fill:none;stroke:var(--muted);stroke-width:1.5;stroke-dasharray:5 5}
+.cgc .forecast{fill:none;stroke:var(--purple);stroke-width:3;stroke-dasharray:3 4;stroke-linecap:round}
+.cgc .point{fill:var(--surface);stroke:var(--blue);stroke-width:2}
+.cgc .bridge{display:flex;align-items:flex-end;gap:8px;height:164px;padding:8px 6px 25px;position:relative}
+.cgc .bridge:after{content:"";position:absolute;left:0;right:0;bottom:24px;border-top:1px solid var(--line)}
+.cgc .bridge-item{display:flex;flex:1;height:100%;align-items:center;justify-content:flex-end;flex-direction:column;gap:5px;position:relative;z-index:1;min-width:0}
+.cgc .bar{width:min(36px,70%);border-radius:5px 5px 0 0;min-height:4px}
+.cgc .bar.total{background:var(--blue)} .cgc .bar.pos{background:var(--good)} .cgc .bar.neg{background:var(--bad)} .cgc .bar.mix{background:var(--warn)}
+.cgc .bridge-val{font-size:9px;font-weight:700}
+.cgc .bridge-lab{font-size:8px;color:var(--muted);text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.cgc .alerts{display:grid;gap:8px}
+.cgc .alert{display:grid;grid-template-columns:4px 1fr auto;gap:9px;align-items:start;background:var(--surface2);border-radius:9px;padding:9px;cursor:pointer;text-align:left;border:0;color:inherit;width:100%}
+.cgc .alert:hover{outline:1px solid var(--accent)}
+.cgc .severity{width:4px;height:100%;border-radius:4px;background:var(--bad)}
+.cgc .severity.warn{background:var(--warn)} .cgc .severity.good{background:var(--good)} .cgc .severity.info{background:var(--blue)}
+.cgc .alert-title{font-size:10px;font-weight:700;margin-bottom:3px}
+.cgc .alert-copy{font-size:9px;color:var(--muted);line-height:1.35}
+.cgc .impact{font-size:10px;font-weight:700;white-space:nowrap}
+.cgc .insight{background:var(--accentSoft);border-radius:10px;padding:11px;margin-top:10px}
+.cgc .insight strong{font-size:10px;display:block;margin-bottom:4px}
+.cgc .insight p{font-size:9px;color:var(--muted);line-height:1.4;margin:0}
+.cgc .decision-btn{margin-top:9px;width:100%;border:0;border-radius:8px;background:var(--accent);color:white;padding:8px 10px;font-size:10px;font-weight:650;cursor:pointer}
+.cgc .split{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cgc .funnel{display:grid;gap:7px;margin-top:10px}
+.cgc .funnel-row{display:grid;grid-template-columns:90px 1fr 70px;align-items:center;gap:8px;font-size:10px}
+.cgc .funnel-row strong{text-align:right}
+.cgc .funnel-track{height:18px;background:var(--surface2);border-radius:5px;overflow:hidden}
+.cgc .funnel-fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--purple));border-radius:5px;max-width:100%}
+.cgc .table-wrap{overflow:auto}
+.cgc table.ct{border-collapse:collapse;width:100%;font-size:10px;min-width:650px}
+.cgc table.ct th{color:var(--muted);font-weight:600;text-align:left;padding:8px;border-bottom:1px solid var(--line)}
+.cgc table.ct td{padding:9px 8px;border-bottom:1px solid var(--line)}
+.cgc table.ct td.num,.cgc table.ct th.num{text-align:right;font-variant-numeric:tabular-nums}
+.cgc .risk{display:inline-flex;align-items:center;gap:5px}
+.cgc .risk:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--good)}
+.cgc .risk.high:before{background:var(--bad)} .cgc .risk.med:before{background:var(--warn)}
+.cgc .customer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.cgc .customer-card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:13px}
+.cgc .customer-card h3{font-size:12px;margin:0 0 3px;font-weight:700}
+.cgc .customer-card p{font-size:9px;color:var(--muted);margin:0 0 12px}
+.cgc .mini-row{display:flex;justify-content:space-between;font-size:10px;margin-top:6px}
+.cgc .actions{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.cgc .action-card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px}
+.cgc .action-card.aprobada{border-left:4px solid var(--good)} .cgc .action-card.rechazada{opacity:.6}
+.cgc .action-top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.cgc .action-card h3{font-size:12px;margin:0;font-weight:700}
+.cgc .action-card p{font-size:9px;color:var(--muted);line-height:1.45}
+.cgc .action-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:11px 0}
+.cgc .action-metrics div{background:var(--surface2);padding:7px;border-radius:7px}
+.cgc .action-metrics span{display:block;font-size:8px;color:var(--muted);margin-bottom:3px}
+.cgc .action-metrics strong{font-size:11px}
+.cgc .action-controls{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.cgc .action-controls button{border:1px solid var(--line);background:var(--surface2);color:var(--text);padding:7px 9px;border-radius:7px;font-size:9px;cursor:pointer}
+.cgc .action-controls button.primary{background:var(--accent);color:white;border-color:var(--accent)}
+.cgc .action-controls button:disabled{opacity:.45;cursor:default}
+.cgc .action-form{display:grid;gap:6px;margin:8px 0}
+.cgc .action-form label{font-size:9px;color:var(--muted);display:grid;gap:3px}
+.cgc .action-form textarea{border:1px solid var(--line);border-radius:7px;padding:6px 8px;font-size:10px;min-height:46px;resize:vertical;background:var(--surface2);color:var(--text)}
+.cgc .evidence{background:var(--surface2);border-radius:8px;padding:8px 10px;margin:6px 0;font-size:9px;color:var(--muted)}
+.cgc .evidence li{margin:2px 0}
+.cgc .na-note{font-size:9px;color:var(--muted)}
+/* Generic module blocks (Escenarios, Cargar datos) adopt the cockpit type scale and font. */
+.cgc :is(h1,h2,h3,h4,h5,p,span,div,a,button,input,select,textarea,table,th,td,label,strong,small,em,li){font-family:inherit}
+.cgc .mm-card{border-radius:12px;padding:14px;border-color:var(--line)}
+.cgc .mm-h{font-size:13px;font-weight:700;letter-spacing:-.01em}
+.cgc .mm-muted{font-size:11px;color:var(--muted)}
+.cgc .mm-stack,.cgc .mm-grid2{gap:12px}
+.cgc .mm-btn{font-size:11px;font-weight:650;padding:7px 12px;border-radius:8px}
+.cgc .mm-btn.cyan{background:var(--accent)}
+.cgc .mm-table{font-size:11px}
+.cgc .mm-table th{font-size:10px;text-transform:none;letter-spacing:0;font-weight:600}
+.cgc .mm-table td{padding:8px}
+.cgc .ms-opt{padding:12px;border-radius:12px;border-color:var(--line)}
+.cgc .ms-opt strong{font-size:13px}
+.cgc .ms-opt span{font-size:10px}
+.cgc .ms-opt.on{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.cgc .ms-num{color:var(--accent) !important}
+.cgc .ms-lab{font-size:11px}
+.cgc .ms-lab small{font-size:10px}
+.cgc .ms-val input{font-size:11px}
+.cgc .ms-val em,.cgc .ms-formula,.cgc .ms-foot,.cgc .ms-move{font-size:10px}
+.cgc .ms-assume{font-size:11px;background:var(--accentSoft)}
+.cgc .ms-kpi{font-size:11px}
+.cgc .ms-row input[type=range]{accent-color:var(--accent)}
+@media(max-width:1100px){.cgc .kpis{grid-template-columns:repeat(3,1fr)}.cgc .grid-main{grid-template-columns:1fr}.cgc .customer-grid{grid-template-columns:repeat(2,1fr)}.cgc .brand{min-width:auto}.cgc .ai-status{display:none}}
+@media(max-width:640px){.cgc .topbar{align-items:flex-start;flex-wrap:wrap}.cgc .topnav{order:3;width:100%}.cgc .toolbar{align-items:flex-start;flex-direction:column}.cgc .kpis{grid-template-columns:repeat(2,1fr)}.cgc .split,.cgc .actions{grid-template-columns:1fr}.cgc .customer-grid{grid-template-columns:1fr}}
+</style></head><body><div class="min-h-screen bg-gray-50"><header class="bg-white border-b border-gray-200 px-6 py-3 flex items-center justify-between"><a class="flex items-center" href="hub.html"><span role="img" aria-label="MIRAI" style="display: inline-flex; flex-direction: column; line-height: 1; flex-shrink: 0;"><span style="font-size: 22px; font-weight: 900; letter-spacing: -0.02em; color: rgb(11, 16, 32); white-space: nowrap;">MIR<span style="color: rgb(0, 216, 245);">[AI]</span></span></span></a><nav class="flex items-center gap-5 text-sm text-gray-600"><a class="hover:text-gray-900" href="hub.html">Inicio</a><a class="hover:text-gray-900" href="executive.html">Dirección</a><a class="hover:text-gray-900" href="process-intelligence.html">Procesos</a><a class="hover:text-gray-900" href="#" data-ro="off" title="No incluido en la copia de solo lectura">Datos</a><a class="hover:text-gray-900" href="copilot.html">Copilot</a><a class="hover:text-gray-900" href="agent.html">Agentes</a><a class="hover:text-gray-900" href="documents.html">Documentos</a><a class="hover:text-gray-900" href="#" data-ro="off" title="No incluido en la copia de solo lectura">Usuarios</a><span class="text-gray-200">|</span><a class="text-cyan-700 hover:text-cyan-900 font-medium" href="admin.html">MIRAI Admin</a><button class="text-gray-500 hover:text-gray-900">Salir</button></nav></header><main class="p-6"><div class="cgc"><section class="app"><header class="topbar"><div class="brand"><span class="brand-mark">AI</span><span><b>MIRAI</b> Inteligencia financiera</span></div><nav class="topnav"><span style="display: contents;"><button class="active">Resultados</button></span><span style="display: contents;"><button class="">Tesorería y liquidez</button></span><span style="display: contents;"><button class="">Cobros</button></span><span style="display: contents;"><button class="">Pagos</button></span><span style="display: contents;"><button class="">Cierre contable</button></span><span style="display: contents;"><button class="">Control de costes</button></span><span style="display: contents;"><button class="">Acciones</button></span><span style="display: contents;"><span class="topnav-sep"></span><button class="">Escenarios</button></span><span style="display: contents;"><button class="">Cargar datos</button></span></nav><div class="ai-status"><span class="ai-dot"></span>Datos al 31/8/2026</div></header><div class="toolbar"><div class="heading"><h1>Rentabilidad y resultados</h1><p>Ingresos, márgenes y EBITDA frente al presupuesto, y qué explica cada desviación.</p></div><div class="filters"><select aria-label="Periodo"><option value="ytd" selected="">Acumulado 2026</option><option value="fy">Año 2026</option><option value="q3">T3 2026</option><option value="l90">Últimos 90 días</option></select><select aria-label="Región"><option value="" selected="">Global</option><option value="Central Europe">Central Europe</option><option value="Iberia">Iberia</option><option value="Nordics">Nordics</option><option value="UK &amp; Ireland">UK &amp; Ireland</option></select><button class="ask-open"><span>✦</span>Preguntar a SANDRA.AI</button></div></div><main class="content"><div class="jsx-64331e922545bbc7" style="opacity: 1; transition: opacity 0.2s;"><div class="kpis"><button class="kpi" title="Ingresos del periodo
+Fórmula: SUMA(Resultados.revenue_eur) con status = Real
+Hojas: Resultados
+Proceso: Control de gestión (CO)
+Posibles causas (hipótesis): Menor volumen, precio o mix; retrasos de facturación
+Automatización: Análisis automático de desviaciones, informes y alertas
+
+Clic para ver el desglose"><div class="kpi-head"><span><span class="kpi-star" title="KPI prioritario">★ </span>Ingresos netos</span><span>€m</span></div><div class="kpi-value ">141,6</div><div class="progress"><span style="width: 95.4021%;"></span></div><div class="kpi-meta"><span>Presupuesto 148,4 · +10,1% vs 2025</span><span class="delta warn">−4,6%</span></div></button><button class="kpi" title="Rentabilidad operativa antes de amortizaciones
+Fórmula: SUMA(ebitda_eur) y EBITDA / ingresos
+Hojas: Resultados
+Proceso: Control de gestión (CO)
+Posibles causas (hipótesis): Aumento de costes, reducción de márgenes, menor volumen
+Automatización: Alertas de desviaciones y análisis de rentabilidad
+
+Clic para ver el desglose"><div class="kpi-head"><span><span class="kpi-star" title="KPI prioritario">★ </span>EBITDA</span><span>€m</span></div><div class="kpi-value ">15,0</div><div class="progress"><span style="width: 66.3682%;"></span></div><div class="kpi-meta"><span>Presupuesto 22,7 · margen 10,6% · 12,6% en 2025</span><span class="delta bad">−33,6%</span></div></button><article class="kpi" title="Resultado operativo
+Fórmula: SUMA(ebit_eur) y EBIT / ingresos
+Hojas: Resultados
+Proceso: Control de gestión (CO)
+Posibles causas (hipótesis): Aumento de costes, reducción de márgenes, menor volumen; mayores amortizaciones
+Automatización: Análisis automático de desviaciones, informes y alertas"><div class="kpi-head"><span>EBIT</span><span>€m</span></div><div class="kpi-value ">11,3</div><div class="kpi-meta"><span>margen 8,0%</span></div></article><button class="kpi" title="Resultado final después de impuestos
+Fórmula: SUMA(net_income_eur) y beneficio neto / ingresos
+Hojas: Resultados
+Proceso: Control de gestión (CO)
+Posibles causas (hipótesis): Aumento de costes, reducción de márgenes, menor volumen; gastos financieros
+Automatización: Análisis automático de desviaciones, informes y alertas
+
+Clic para ver el desglose"><div class="kpi-head"><span>Beneficio neto</span><span>€m</span></div><div class="kpi-value ">7,6</div><div class="kpi-meta"><span>margen 5,4%</span></div></button><button class="kpi" title="Cumplimiento del presupuesto
+Fórmula: SUMA(revenue_eur) / SUMA(budget_revenue_eur) − 1 (y lo mismo para EBITDA)
+Hojas: Resultados
+Proceso: Control de gestión (CO)
+Posibles causas (hipótesis): Volumen, precio, costes o calendario distintos del plan
+Automatización: Análisis automático de desviaciones, informes y alertas
+
+Clic para ver el desglose"><div class="kpi-head"><span><span class="kpi-star" title="KPI prioritario">★ </span>Desviación presupuesto vs. real</span><span>%</span></div><div class="kpi-value ">-4,6%</div><div class="progress"><span style="width: 100%;"></span></div><div class="kpi-meta"><span>Tolerancia -3,0% · EBITDA −33,6% vs presupuesto</span><span class="delta bad">−1,6 pp</span></div></button><article class="kpi" title="Resultado por unidad de negocio
+Fórmula: SUMA(contribution_eur) / SUMA(revenue_eur) por business_unit
+Hojas: Resultados por unidad
+Proceso: Control de gestión (CO)
+Posibles causas (hipótesis): Mix de ventas y márgenes por unidad
+Automatización: Análisis automático de desviaciones, informes y alertas"><div class="kpi-head"><span>Rentabilidad por unidad de negocio</span><span>%</span></div><div class="kpi-value ">21,6%</div><div class="kpi-meta"><span>margen de contribución · mejor Software (39,5%), peor Equipos (10,1%)</span></div></article></div><div class="proc-links"><span>Mejorar el proceso:</span><a class="proc-link" title="Abre el proceso en Procesos: AS-IS → TO-BE, automatizaciones e iniciativas" href="process-intelligence.html">Presupuesto y control de gestión ▸</a></div><div class="grid-main"><div class="stack"><article class="card"><div class="card-head"><div><h2 class="card-title">Trayectoria de ingresos</h2><p class="card-sub">Real, presupuesto y previsión acumulados · € millones</p></div><span class="chip">Desvío del EBITDA del año −8,3m</span></div><div class="legend" style="margin-top: -6px; margin-bottom: 6px;"><span><i class="swatch" style="background: var(--blue);"></i>Real</span><span><i class="swatch" style="background: var(--muted);"></i>Presupuesto</span><span><i class="swatch" style="background: var(--purple);"></i>Previsión</span></div><div class="chart-wrap"><svg viewBox="0 0 760 210" role="img" aria-label="Real, plan y forecast acumulados"><defs><linearGradient id="cgcArea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5577ee" stop-opacity=".24"></stop><stop offset="1" stop-color="#5577ee" stop-opacity="0"></stop></linearGradient></defs><g><line class="gridline" x1="45" y1="130" x2="745" y2="130"></line><text x="5" y="134">66</text></g><g><line class="gridline" x1="45" y1="94" x2="745" y2="94"></line><text x="5" y="98">131</text></g><g><line class="gridline" x1="45" y1="58" x2="745" y2="58"></line><text x="5" y="62">197</text></g><g><line class="gridline" x1="45" y1="22" x2="745" y2="22"></line><text x="5" y="26">263</text></g><path d="M52 156.78300544 L112 147.47253979428572 L172 137.81078217142857 L232 128.02601289142856 L292 117.79647177142857 L352 107.32865371428571 L412 97.69443712 L472 88.33508278857143 L472 166 L52 166 Z" fill="url(#cgcArea)"></path><path class="budget" d="M52 155.824 L112 145.648 L172 135.472 L232 125.29599999999999 L292 115.12 L352 104.944 L412 94.768 L472 84.592 L532 70.65828571428571 L592 56.72457142857142 L652 42.79085714285715 L712 28.85714285714286"></path><path class="actual" d="M52 156.78300544 L112 147.47253979428572 L172 137.81078217142857 L232 128.02601289142856 L292 117.79647177142857 L352 107.32865371428571 L412 97.69443712 L472 88.33508278857143"></path><path class="forecast" d="M472 88.33508278857143 L532 76.08140635428572 L592 63.535976594285714 L652 50.26116132571428 L712 36.11108278857142"></path><circle class="point" cx="472" cy="88.33508278857143" r="4"></circle><text x="482" y="82.33508278857143" style="fill: rgb(23, 32, 51); font-weight: 700;">141,6</text><text x="680" y="30.111082788571423" style="fill: rgb(139, 98, 217); font-weight: 700;">236,8</text><text x="47" y="196">Ene</text><text x="107" y="196">Feb</text><text x="167" y="196">Mar</text><text x="227" y="196">Abr</text><text x="287" y="196">May</text><text x="347" y="196">Jun</text><text x="407" y="196">Jul</text><text x="467" y="196">Ago</text><text x="527" y="196">Sep</text><text x="587" y="196">Oct</text><text x="647" y="196">Nov</text><text x="707" y="196">Dic</text></svg></div></article><article class="card"><div class="card-head"><div><h2 class="card-title">Puente del EBITDA</h2><p class="card-sub">Del presupuesto al real del periodo · volumen al margen de presupuesto; el resto es margen y costes</p></div></div><div class="bridge"><div class="bridge-item" title="Plan: 22,7"><span class="bridge-val">22,7</span><div class="bar total" style="height: 92%;"></div><span class="bridge-lab">Plan</span></div><div class="bridge-item" title="Volumen: −1,0"><span class="bridge-val">−1,0</span><div class="bar neg" style="height: 7.12641%;"></div><span class="bridge-lab">Volumen</span></div><div class="bridge-item" title="Margen y costes: −6,6"><span class="bridge-val">−6,6</span><div class="bar neg" style="height: 45%;"></div><span class="bridge-lab">Margen y costes</span></div><div class="bridge-item" title="Real: 15,0"><span class="bridge-val">15,0</span><div class="bar total" style="height: 61.0588%;"></div><span class="bridge-lab">Real</span></div></div><div class="insight"><strong>Diagnóstico</strong><p>Del desvío del EBITDA, el 14% se explica por volumen (menos ventas al margen de presupuesto) y el 86% por margen y costes.</p></div></article></div><aside class="stack"><article class="card"><div class="card-head"><div><h2 class="card-title">Resumen ejecutivo</h2><p class="card-sub">Calculado con tus datos</p></div></div><div class="insight"><strong>Resultados</strong><p>Los ingresos están un 4,6% por debajo del presupuesto y el EBITDA un 33,6% por debajo: la caída del EBITDA es mayor que la de ventas, lo que apunta a margen y estructura de costes.</p></div><div class="insight"><strong>Liquidez</strong><p>El mínimo de caja previsto es 19,3m en la semana 8, frente a un suelo de 12,0m: no hay ruptura prevista.</p></div><div class="insight"><strong>Postura recomendada</strong><p>El «Plan de acción combinado» de tu plantilla aporta +7,9m de EBITDA y +10,4m de caja: cierra el 95% del desvío del EBITDA del año.</p></div><button class="decision-btn">Revisar el plan de acción combinado</button></article><article class="card"><div class="card-head"><div><h2 class="card-title">Agenda de decisiones</h2><p class="card-sub">Reglas activas con mayor impacto</p></div></div><div class="alerts"><button class="alert"><span class="severity "></span><div><div class="alert-title">Gap de EBITDA en el forecast del año</div><div class="alert-copy">El EBITDA previsto del año (€27.65M) está un 23.2% por debajo del objetivo (€36.00M).</div></div><span class="impact">−8,3m</span></button><button class="alert"><span class="severity warn"></span><div><div class="alert-title">Erosión del margen bruto</div><div class="alert-copy">El margen bruto lleva dos meses al menos 150 pb por debajo del plan (34.8%): 32.9% y 32.8%.</div></div><span class="impact">−2,7m</span></button><button class="alert"><span class="severity warn"></span><div><div class="alert-title">Coste industrial por encima del estándar</div><div class="alert-copy">9 combinaciones de planta y familia superan su coste estándar en más del 3%: €2.41M de sobrecoste en el año.</div></div><span class="impact">−2,4m</span></button><button class="alert"><span class="severity warn"></span><div><div class="alert-title">Centros de coste por encima del presupuesto</div><div class="alert-copy">15 centros superan su presupuesto en más del 5% y más de 100k: €1.95M de sobrecoste.</div></div><span class="impact">−2,0m</span></button></div></article></aside></div><div class="split" style="margin-top: 12px;"><article class="card"><div class="card-head"><div><h2 class="card-title">Cuenta de resultados del periodo</h2><p class="card-sub">Real, presupuesto y año anterior · € millones</p></div></div><div class="table-wrap"><table class="ct"><thead><tr><th>Línea</th><th class="num">Real</th><th class="num">Presupuesto</th><th class="num">Año anterior</th><th class="num">vs año ant.</th><th class="num">% ventas</th></tr></thead><tbody><tr><td><b>Ingresos netos</b></td><td class="num">141,6</td><td class="num">148,4</td><td class="num">128,6</td><td class="num">+10,1%</td><td class="num">100,0%</td></tr><tr><td>Coste de ventas</td><td class="num">-95,0</td><td class="num">—</td><td class="num">-84,7</td><td class="num">+12,2%</td><td class="num">67,1%</td></tr><tr><td>Beneficio bruto</td><td class="num">46,5</td><td class="num">—</td><td class="num">43,9</td><td class="num">+6,0%</td><td class="num">32,9%</td></tr><tr><td>Gastos de estructura</td><td class="num">-31,5</td><td class="num">—</td><td class="num">-27,7</td><td class="num">+13,5%</td><td class="num">22,2%</td></tr><tr><td><b>EBITDA</b></td><td class="num">15,0</td><td class="num">22,7</td><td class="num">16,2</td><td class="num">−6,9%</td><td class="num">10,6%</td></tr><tr><td>Amortizaciones</td><td class="num">-3,7</td><td class="num">—</td><td class="num">-3,5</td><td class="num">+6,4%</td><td class="num">2,6%</td></tr><tr><td>EBIT</td><td class="num">11,3</td><td class="num">—</td><td class="num">12,7</td><td class="num">−10,6%</td><td class="num">8,0%</td></tr><tr><td>Gastos financieros</td><td class="num">-1,3</td><td class="num">—</td><td class="num">-1,3</td><td class="num">−0,8%</td><td class="num">0,9%</td></tr><tr><td>Impuestos</td><td class="num">-2,4</td><td class="num">—</td><td class="num">-2,8</td><td class="num">−15,3%</td><td class="num">1,7%</td></tr><tr><td><b>Beneficio neto</b></td><td class="num">7,6</td><td class="num">—</td><td class="num">8,5</td><td class="num">−10,5%</td><td class="num">5,4%</td></tr></tbody></table></div></article><article class="card"><div class="card-head"><div><h2 class="card-title">Rentabilidad por unidad de negocio</h2><p class="card-sub">Ingresos, margen bruto y margen de contribución del periodo</p></div></div><div class="table-wrap"><table class="ct"><thead><tr><th>Unidad</th><th class="num">Ingresos</th><th class="num">Peso</th><th class="num">Margen bruto</th><th class="num">Contribución</th><th class="num">Margen contrib.</th></tr></thead><tbody><tr><td>Equipos</td><td class="num">44,9m</td><td class="num">31,7%</td><td class="num">17,2%</td><td class="num">4,6m</td><td class="num">10,1%</td></tr><tr><td>Software</td><td class="num">41,4m</td><td class="num">29,2%</td><td class="num">55,6%</td><td class="num">16,4m</td><td class="num">39,5%</td></tr><tr><td>Servicio gestionado</td><td class="num">28,9m</td><td class="num">20,4%</td><td class="num">32,7%</td><td class="num">6,0m</td><td class="num">20,6%</td></tr><tr><td>Servicio profesional</td><td class="num">26,4m</td><td class="num">18,6%</td><td class="num">24,0%</td><td class="num">3,7m</td><td class="num">13,9%</td></tr></tbody></table></div></article></div><article class="card" style="margin-top: 12px;"><div class="card-head"><div><h2 class="card-title">Ingresos mensuales</h2><p class="card-sub">Real frente a presupuesto y al mismo mes del año anterior · € millones</p></div></div><div class="funnel"><div class="funnel-row"><span>Ene 26</span><div class="funnel-track"><div class="funnel-fill" style="width: 88.0508%;"></div></div><strong>16,8m · −9,4% vs ppto. · +36,4% vs año ant.</strong></div><div class="funnel-row"><span>Feb 26</span><div class="funnel-track"><div class="funnel-fill" style="width: 88.9437%;"></div></div><strong>17,0m · −8,5% vs ppto. · +15,3% vs año ant.</strong></div><div class="funnel-row"><span>Mar 26</span><div class="funnel-track"><div class="funnel-fill" style="width: 92.2996%;"></div></div><strong>17,6m · −5,1% vs ppto. · +13,5% vs año ant.</strong></div><div class="funnel-row"><span>Abr 26</span><div class="funnel-track"><div class="funnel-fill" style="width: 93.4748%;"></div></div><strong>17,8m · −3,8% vs ppto. · +0,9% vs año ant.</strong></div><div class="funnel-row"><span>May 26</span><div class="funnel-track"><div class="funnel-fill" style="width: 97.7237%;"></div></div><strong>18,6m · +0,5% vs ppto. · +0,9% vs año ant.</strong></div><div class="funnel-row"><span>Jun 26</span><div class="funnel-track"><div class="funnel-fill" style="width: 100%;"></div></div><strong>19,1m · +2,9% vs ppto. · +0,6% vs año ant.</strong></div><div class="funnel-row"><span>Jul 26</span><div class="funnel-track"><div class="funnel-fill" style="width: 92.0365%;"></div></div><strong>17,6m · −5,3% vs ppto. · +16,9% vs año ant.</strong></div><div class="funnel-row"><span>Ago 26</span><div class="funnel-track"><div class="funnel-fill" style="width: 89.4107%;"></div></div><strong>17,1m · −8,0% vs ppto. · +7,4% vs año ant.</strong></div></div></article></div></main></section><div class="ask-overlay" style="display: none;"><aside role="dialog" aria-label="Preguntar a SANDRA.AI" class="ask-drawer"><header class="ask-drawer-head"><span class="brand-mark">✦</span><div><strong>SANDRA.AI</strong><small>Responde con los datos de este dashboard</small></div><button title="Cerrar (Esc)">✕</button></header><div class="jsx-c12b2605c2645c21 askchat"><div class="jsx-c12b2605c2645c21 ask-log"><div class="jsx-c12b2605c2645c21 ask-empty"><p class="jsx-c12b2605c2645c21">Pregúntame por ingresos, margen, pipeline, clientes o la causa de una desviación. Respondo solo con los datos cargados.</p><div class="jsx-c12b2605c2645c21 ask-chips"><button type="button" class="jsx-c12b2605c2645c21">¿Cuál es el EBITDA?</button><button type="button" class="jsx-c12b2605c2645c21">¿Por qué estamos por debajo del presupuesto?</button><button type="button" class="jsx-c12b2605c2645c21">Ingresos por región</button><button type="button" class="jsx-c12b2605c2645c21">Margen bruto por región</button></div></div></div><form class="jsx-c12b2605c2645c21 ask-form"><input placeholder="Escribe tu pregunta…" aria-label="Pregunta a SANDRA.AI" class="jsx-c12b2605c2645c21" value=""><button type="submit" disabled="" class="jsx-c12b2605c2645c21">Enviar</button></form><p class="jsx-c12b2605c2645c21 ask-foot">Respuestas calculadas con los datos cargados · sin invenciones</p></div></aside></div></div></main></div>
+<style>
+#mirai-ro{position:fixed;right:16px;bottom:16px;z-index:2147483647;background:#0b1020;color:#e6e9ef;font:600 12px system-ui,sans-serif;
+padding:8px 12px;border-radius:999px;box-shadow:0 6px 24px rgba(0,0,0,.25);opacity:.92}
+#mirai-ro b{color:#00d8f5}
+#mirai-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:2147483647;background:#1f2937;color:#fff;
+font:500 13px system-ui,sans-serif;padding:10px 16px;border-radius:10px;display:none}
+</style>
+<div id="mirai-ro">MIR<b>[AI]</b> · versión de solo lectura · 12/11/2026</div>
+<div id="mirai-toast">En esta copia de solo lectura no está disponible esta acción.</div>
+<script>
+(function(){
+  var TABS = [["Resultados", "dashboard_finance__resultados.html"], ["Tesorería y liquidez", "dashboard_finance__tesoreria.html"], ["Cobros", "dashboard_finance__cobros.html"], ["Pagos", "dashboard_finance__pagos.html"], ["Cierre contable", "dashboard_finance__cierre.html"], ["Control de costes", "dashboard_finance__control.html"], ["Acciones", "dashboard_finance__acciones.html"], ["Escenarios", "dashboard_finance__escenarios.html"]];
+  var toast = document.getElementById('mirai-toast'), t;
+  function say(){ toast.style.display='block'; clearTimeout(t); t=setTimeout(function(){toast.style.display='none'},2200) }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a');
+    if (a) { if (a.getAttribute('data-ro') === 'off') { e.preventDefault(); say() } return }
+    var b = e.target.closest('button,[role=tab],[role=radio]');
+    if (!b) return;
+    var txt = (b.innerText || '').replace(/\s+/g,' ').trim();
+    for (var i=0;i<TABS.length;i++){ if (TABS[i][0] && txt.indexOf(TABS[i][0])===0){ e.preventDefault(); location.href = TABS[i][1]; return } }
+    e.preventDefault(); say();
+  }, true);
+  document.addEventListener('submit', function(e){ e.preventDefault(); say() }, true);
+})();
+</script>
+</body></html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="assets/_next-static-css-app-layout.css" data-precedence="next_static/css/app/layout.css"><link rel="stylesheet" href="assets/_next-static-css-app--app--productividad-page.css" data-precedence="next_static/css/app/(app)/productividad/page.css"><link rel="preload" href="assets/_next-static-css-app--app--productividad-page.css" as="style"><title>SANDRA.IA — AI Business Operating System</title><meta name="description" content="Understand your business data, calculate KPIs, and interact with your AI Commercial Analyst."><link rel="icon" href="assets/media/icon.svg" type="image/svg+xml" sizes="any"><style type="text/css" data-styled-jsx="">.cgc .pd-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:14px}.cgc .pd-mini{grid-template-columns:repeat(3,minmax(0,1fr))!important}.cgc .pd-h{margin:18px 0 10px;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}.cgc .pd-measures{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:8px;margin:10px 0}.cgc .pd-measure{background:var(--surface);border:1px solid var(--line);-webkit-border-radius:12px;-moz-border-radius:12px;border-radius:12px;padding:10px 12px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:4px}.cgc .pd-measure span{font-size:11px;color:var(--muted)}.cgc .pd-measure b{font-size:18px}.cgc .pd-measure.empty b{color:#98a2b3}.cgc .pd-form{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px 18px}.cgc .pd-q{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:6px;font-size:13px;color:var(--text)}.cgc .pd-input{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:8px}.cgc .pd-input input{width:120px;border:1px solid var(--line);-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;padding:7px 10px;background:#fff}.cgc .pd-input em{font-style:normal;font-size:12px;color:var(--muted)}.cgc .pd-foot{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-moz-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:12px;margin-top:12px}.cgc .pd-btn{border:0;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;padding:8px 14px;background:var(--accent);color:#fff;font-weight:600;cursor:pointer}.cgc .pd-btn:disabled{opacity:.6}.cgc .pd-link{font-size:12px;color:var(--accent);text-decoration:none;font-weight:600}.cgc .pd-ok{font-size:12px;color:var(--good);font-weight:600}.cgc .pd-err{font-size:12px;color:var(--bad)}</style><style type="text/css" data-styled-jsx="">
+.cgc{--bg:#f4f6f9;--surface:#ffffff;--surface2:#f7f9fc;--text:#172033;--muted:#667085;--line:#e3e8ef;--nav:#101828;--navText:#f7f9fc;--accent:#5577ee;--accentSoft:#edf1ff;--good:#16a36a;--warn:#e49b25;--bad:#db4d57;--blue:#5577ee;--purple:#8b62d9;--cyan:#1f9fb2;--shadow:0 16px 50px rgba(16,24,40,.10);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);width:100%;}
+.cgc *{box-sizing:border-box}
+.cgc button,.cgc select,.cgc input{font:inherit}
+.cgc .app{background:var(--bg);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;min-height:760px}
+.cgc .topbar{display:flex;align-items:center;gap:14px;background:var(--nav);color:var(--navText);padding:10px 16px}
+.cgc .brand{display:flex;align-items:center;gap:8px;flex:none;font-weight:700;letter-spacing:-.01em;font-size:13px;white-space:nowrap}
+.cgc .brand b{font-weight:900;letter-spacing:-.02em}
+.cgc .brand-mark{display:grid;place-items:center;width:26px;height:26px;border-radius:8px;background:linear-gradient(145deg,#6e8cff,#885ee2);font-size:11px}
+.cgc .topnav{display:flex;flex-wrap:wrap;gap:2px;flex:1;min-width:0;align-items:center;overflow:hidden}
+.cgc .topnav button{border:0;background:transparent;color:#aeb8c7;padding:5px 9px;border-radius:7px;cursor:pointer;white-space:nowrap;font-size:12px;line-height:1.3}
+.cgc .topnav button:hover{color:#fff}
+.cgc .topnav button.active{background:#263142;color:#fff}
+.cgc .topnav-sep{width:1px;height:16px;background:#2f3a4c;margin:0 5px;flex:none}
+.cgc .ai-status{display:flex;align-items:center;gap:6px;color:#c8d1df;font-size:11px;white-space:nowrap;flex:none}
+.cgc .ai-dot{width:8px;height:8px;border-radius:50%;background:#49d39a;box-shadow:0 0 0 4px rgba(73,211,154,.12)}
+.cgc .toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px 12px}
+.cgc .heading h1{font-size:22px;line-height:1.1;margin:0 0 5px;letter-spacing:-.025em;font-weight:700}
+.cgc .heading p{font-size:12px;color:var(--muted);margin:0}
+.cgc .filters{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.cgc .filters select{color:var(--text);background:var(--surface);border:1px solid var(--line);padding:8px 28px 8px 10px;border-radius:8px;font-size:12px}
+.cgc .ask-open{display:inline-flex;align-items:center;gap:7px;border:0;border-radius:8px;padding:8px 13px;font-size:12px;font-weight:650;color:#fff;background:linear-gradient(135deg,#6e8cff,#885ee2);cursor:pointer;box-shadow:0 4px 14px rgba(110,140,255,.35)}
+.cgc .ask-open:hover{filter:brightness(1.07)}
+.cgc .ask-overlay{position:fixed;inset:0;z-index:45;background:rgba(16,24,40,.35);display:flex;justify-content:flex-end}
+.cgc .ask-drawer{width:min(480px,100%);height:100%;background:var(--bg);box-shadow:-20px 0 50px rgba(16,24,40,.18);display:flex;flex-direction:column;animation:cgcSlide .18s ease-out}
+@keyframes cgcSlide{from{transform:translateX(24px);opacity:.4}to{transform:none;opacity:1}}
+.cgc .ask-drawer-head{display:flex;align-items:center;gap:10px;background:var(--nav);color:var(--navText);padding:14px 16px}
+.cgc .ask-drawer-head div{flex:1;display:flex;flex-direction:column}
+.cgc .ask-drawer-head strong{font-size:14px}
+.cgc .ask-drawer-head small{font-size:11px;color:#aeb8c7}
+.cgc .ask-drawer-head button{border:0;background:transparent;color:#aeb8c7;font-size:15px;cursor:pointer}
+.cgc .content{padding:0 22px 24px}
+.cgc .kpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:8px 0 12px}
+.cgc .kpi{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px;min-width:0;text-align:left;color:inherit}
+.cgc button.kpi{cursor:pointer}
+.cgc button.kpi:hover{border-color:var(--accent)}
+.cgc .kpi-head{display:flex;justify-content:space-between;gap:5px;color:var(--muted);font-size:11px;margin-bottom:10px}
+.cgc .kpi-value{font-size:22px;font-weight:720;letter-spacing:-.035em;white-space:nowrap}
+.cgc .kpi-value.na{color:var(--muted);font-size:16px}
+.cgc .kpi-meta{display:flex;align-items:center;justify-content:space-between;gap:6px;font-size:10px;margin-top:7px;color:var(--muted)}
+.cgc .delta{font-weight:650}
+.cgc .delta.good{color:var(--good)} .cgc .delta.bad{color:var(--bad)} .cgc .delta.warn{color:var(--warn)}
+.cgc .progress{height:4px;background:var(--line);border-radius:4px;overflow:hidden;margin-top:8px}
+.cgc .progress span{display:block;height:100%;background:var(--accent)}
+.cgc .kpi-star{color:var(--warn)}
+.cgc .proc-link{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:650;color:var(--blue);text-decoration:none;border:1px solid var(--line);border-radius:7px;padding:5px 9px;background:var(--surface)}
+.cgc .proc-link:hover{border-color:var(--blue)}
+.cgc .proc-links{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 12px}
+.cgc .proc-links span{font-size:10px;color:var(--muted)}
+.cgc .proxy-tag{font-size:8px;font-weight:700;text-transform:uppercase;color:var(--purple);background:#f1ebfc;border-radius:4px;padding:0 4px}
+.cgc .grid-main{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(270px,.85fr);gap:12px}
+.cgc .stack{display:grid;gap:12px;align-content:start}
+.cgc .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;min-width:0}
+.cgc .card-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:12px}
+.cgc .card-title{font-size:13px;font-weight:700;margin:0}
+.cgc .card-sub{font-size:10px;color:var(--muted);margin:3px 0 0}
+.cgc .chip{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line);border-radius:999px;padding:4px 7px;color:var(--muted);font-size:9px;white-space:nowrap}
+.cgc .legend{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:9px}
+.cgc .legend span{display:flex;align-items:center;gap:5px}
+.cgc .swatch{width:8px;height:8px;border-radius:2px;display:inline-block}
+.cgc .chart-wrap{position:relative;height:205px}
+.cgc .chart-wrap svg{width:100%;height:100%;overflow:visible}
+.cgc .chart-wrap text{font-family:inherit;font-size:9px;fill:var(--muted)}
+.cgc .gridline{stroke:var(--line);stroke-width:1}
+.cgc .actual{fill:none;stroke:var(--blue);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.cgc .budget{fill:none;stroke:var(--muted);stroke-width:1.5;stroke-dasharray:5 5}
+.cgc .forecast{fill:none;stroke:var(--purple);stroke-width:3;stroke-dasharray:3 4;stroke-linecap:round}
+.cgc .point{fill:var(--surface);stroke:var(--blue);stroke-width:2}
+.cgc .bridge{display:flex;align-items:flex-end;gap:8px;height:164px;padding:8px 6px 25px;position:relative}
+.cgc .bridge:after{content:"";position:absolute;left:0;right:0;bottom:24px;border-top:1px solid var(--line)}
+.cgc .bridge-item{display:flex;flex:1;height:100%;align-items:center;justify-content:flex-end;flex-direction:column;gap:5px;position:relative;z-index:1;min-width:0}
+.cgc .bar{width:min(36px,70%);border-radius:5px 5px 0 0;min-height:4px}
+.cgc .bar.total{background:var(--blue)} .cgc .bar.pos{background:var(--good)} .cgc .bar.neg{background:var(--bad)} .cgc .bar.mix{background:var(--warn)}
+.cgc .bridge-val{font-size:9px;font-weight:700}
+.cgc .bridge-lab{font-size:8px;color:var(--muted);text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.cgc .alerts{display:grid;gap:8px}
+.cgc .alert{display:grid;grid-template-columns:4px 1fr auto;gap:9px;align-items:start;background:var(--surface2);border-radius:9px;padding:9px;cursor:pointer;text-align:left;border:0;color:inherit;width:100%}
+.cgc .alert:hover{outline:1px solid var(--accent)}
+.cgc .severity{width:4px;height:100%;border-radius:4px;background:var(--bad)}
+.cgc .severity.warn{background:var(--warn)} .cgc .severity.good{background:var(--good)} .cgc .severity.info{background:var(--blue)}
+.cgc .alert-title{font-size:10px;font-weight:700;margin-bottom:3px}
+.cgc .alert-copy{font-size:9px;color:var(--muted);line-height:1.35}
+.cgc .impact{font-size:10px;font-weight:700;white-space:nowrap}
+.cgc .insight{background:var(--accentSoft);border-radius:10px;padding:11px;margin-top:10px}
+.cgc .insight strong{font-size:10px;display:block;margin-bottom:4px}
+.cgc .insight p{font-size:9px;color:var(--muted);line-height:1.4;margin:0}
+.cgc .decision-btn{margin-top:9px;width:100%;border:0;border-radius:8px;background:var(--accent);color:white;padding:8px 10px;font-size:10px;font-weight:650;cursor:pointer}
+.cgc .split{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cgc .funnel{display:grid;gap:7px;margin-top:10px}
+.cgc .funnel-row{display:grid;grid-template-columns:90px 1fr 70px;align-items:center;gap:8px;font-size:10px}
+.cgc .funnel-row strong{text-align:right}
+.cgc .funnel-track{height:18px;background:var(--surface2);border-radius:5px;overflow:hidden}
+.cgc .funnel-fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--purple));border-radius:5px;max-width:100%}
+.cgc .table-wrap{overflow:auto}
+.cgc table.ct{border-collapse:collapse;width:100%;font-size:10px;min-width:650px}
+.cgc table.ct th{color:var(--muted);font-weight:600;text-align:left;padding:8px;border-bottom:1px solid var(--line)}
+.cgc table.ct td{padding:9px 8px;border-bottom:1px solid var(--line)}
+.cgc table.ct td.num,.cgc table.ct th.num{text-align:right;font-variant-numeric:tabular-nums}
+.cgc .risk{display:inline-flex;align-items:center;gap:5px}
+.cgc .risk:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--good)}
+.cgc .risk.high:before{background:var(--bad)} .cgc .risk.med:before{background:var(--warn)}
+.cgc .customer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.cgc .customer-card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:13px}
+.cgc .customer-card h3{font-size:12px;margin:0 0 3px;font-weight:700}
+.cgc .customer-card p{font-size:9px;color:var(--muted);margin:0 0 12px}
+.cgc .mini-row{display:flex;justify-content:space-between;font-size:10px;margin-top:6px}
+.cgc .actions{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.cgc .action-card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px}
+.cgc .action-card.aprobada{border-left:4px solid var(--good)} .cgc .action-card.rechazada{opacity:.6}
+.cgc .action-top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.cgc .action-card h3{font-size:12px;margin:0;font-weight:700}
+.cgc .action-card p{font-size:9px;color:var(--muted);line-height:1.45}
+.cgc .action-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:11px 0}
+.cgc .action-metrics div{background:var(--surface2);padding:7px;border-radius:7px}
+.cgc .action-metrics span{display:block;font-size:8px;color:var(--muted);margin-bottom:3px}
+.cgc .action-metrics strong{font-size:11px}
+.cgc .action-controls{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.cgc .action-controls button{border:1px solid var(--line);background:var(--surface2);color:var(--text);padding:7px 9px;border-radius:7px;font-size:9px;cursor:pointer}
+.cgc .action-controls button.primary{background:var(--accent);color:white;border-color:var(--accent)}
+.cgc .action-controls button:disabled{opacity:.45;cursor:default}
+.cgc .action-form{display:grid;gap:6px;margin:8px 0}
+.cgc .action-form label{font-size:9px;color:var(--muted);display:grid;gap:3px}
+.cgc .action-form textarea{border:1px solid var(--line);border-radius:7px;padding:6px 8px;font-size:10px;min-height:46px;resize:vertical;background:var(--surface2);color:var(--text)}
+.cgc .evidence{background:var(--surface2);border-radius:8px;padding:8px 10px;margin:6px 0;font-size:9px;color:var(--muted)}
+.cgc .evidence li{margin:2px 0}
+.cgc .na-note{font-size:9px;color:var(--muted)}
+/* Generic module blocks (Escenarios, Cargar datos) adopt the cockpit type scale and font. */
+.cgc :is(h1,h2,h3,h4,h5,p,span,div,a,button,input,select,textarea,table,th,td,label,strong,small,em,li){font-family:inherit}
+.cgc .mm-card{border-radius:12px;padding:14px;border-color:var(--line)}
+.cgc .mm-h{font-size:13px;font-weight:700;letter-spacing:-.01em}
+.cgc .mm-muted{font-size:11px;color:var(--muted)}
+.cgc .mm-stack,.cgc .mm-grid2{gap:12px}
+.cgc .mm-btn{font-size:11px;font-weight:650;padding:7px 12px;border-radius:8px}
+.cgc .mm-btn.cyan{background:var(--accent)}
+.cgc .mm-table{font-size:11px}
+.cgc .mm-table th{font-size:10px;text-transform:none;letter-spacing:0;font-weight:600}
+.cgc .mm-table td{padding:8px}
+.cgc .ms-opt{padding:12px;border-radius:12px;border-color:var(--line)}
+.cgc .ms-opt strong{font-size:13px}
+.cgc .ms-opt span{font-size:10px}
+.cgc .ms-opt.on{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.cgc .ms-num{color:var(--accent) !important}
+.cgc .ms-lab{font-size:11px}
+.cgc .ms-lab small{font-size:10px}
+.cgc .ms-val input{font-size:11px}
+.cgc .ms-val em,.cgc .ms-formula,.cgc .ms-foot,.cgc .ms-move{font-size:10px}
+.cgc .ms-assume{font-size:11px;background:var(--accentSoft)}
+.cgc .ms-kpi{font-size:11px}
+.cgc .ms-row input[type=range]{accent-color:var(--accent)}
+@media(max-width:1100px){.cgc .kpis{grid-template-columns:repeat(3,1fr)}.cgc .grid-main{grid-template-columns:1fr}.cgc .customer-grid{grid-template-columns:repeat(2,1fr)}.cgc .brand{min-width:auto}.cgc .ai-status{display:none}}
+@media(max-width:640px){.cgc .topbar{align-items:flex-start;flex-wrap:wrap}.cgc .topnav{order:3;width:100%}.cgc .toolbar{align-items:flex-start;flex-direction:column}.cgc .kpis{grid-template-columns:repeat(2,1fr)}.cgc .split,.cgc .actions{grid-template-columns:1fr}.cgc .customer-grid{grid-template-columns:1fr}}
+</style></head><body><div class="min-h-screen bg-gray-50"><header class="bg-white border-b border-gray-200 px-6 py-3 flex items-center justify-between"><a class="flex items-center" href="hub.html"><span role="img" aria-label="MIRAI" style="display: inline-flex; flex-direction: column; line-height: 1; flex-shrink: 0;"><span style="font-size: 22px; font-weight: 900; letter-spacing: -0.02em; color: rgb(11, 16, 32); white-space: nowrap;">MIR<span style="color: rgb(0, 216, 245);">[AI]</span></span></span></a><nav class="flex items-center gap-5 text-sm text-gray-600"><a class="hover:text-gray-900" href="hub.html">Inicio</a><a class="hover:text-gray-900" href="executive.html">Dirección</a><a class="hover:text-gray-900" href="process-intelligence.html">Procesos</a><a class="hover:text-gray-900" href="#" data-ro="off" title="No incluido en la copia de solo lectura">Datos</a><a class="hover:text-gray-900" href="copilot.html">Copilot</a><a class="hover:text-gray-900" href="agent.html">Agentes</a><a class="hover:text-gray-900" href="documents.html">Documentos</a><a class="hover:text-gray-900" href="#" data-ro="off" title="No incluido en la copia de solo lectura">Usuarios</a><span class="text-gray-200">|</span><a class="text-cyan-700 hover:text-cyan-900 font-medium" href="admin.html">MIRAI Admin</a><button class="text-gray-500 hover:text-gray-900">Salir</button></nav></header><main class="p-6"><div class="cgc"><section class="app"><header class="topbar"><div class="brand"><span class="brand-mark">AI</span><span><b>MIRAI</b> Productividad y automatización de Cockpit</span></div><nav class="topnav"><span style="display: contents;"><button class="active">Todas las áreas</button></span><span style="display: contents;"><button class="">Ventas</button></span><span style="display: contents;"><button class="">Finanzas</button></span><span style="display: contents;"><button class="">Compras</button></span><span style="display: contents;"><button class="">Supply Chain</button></span></nav><div class="ai-status"><span class="ai-dot"></span>Datos al 31/8/2026</div></header><div class="toolbar"><div class="heading"><h1>Productividad y automatización</h1><p>Trabajo manual, automatización y tiempos de todas tus áreas: lo que dicen los datos de cada cockpit y lo que nos contáis vosotros.</p></div><div class="filters"></div></div><main class="content"><div class="jsx-370e37866c53f1e0 pd-grid"><article class="card"><div class="card-head"><div><h2 class="card-title">Ventas</h2><p class="card-sub">0 de 7 preguntas respondidas</p></div></div><div class="jsx-370e37866c53f1e0 kpis pd-mini"><article class="kpi"><div class="kpi-head"><span>Ventas por comercial</span><span>€m</span></div><div class="kpi-value ">5,9</div><div class="kpi-meta"><span>24 comerciales con ventas</span></div></article><article class="kpi"><div class="kpi-head"><span>Ofertas por comercial</span><span>#</span></div><div class="kpi-value ">89</div><div class="kpi-meta"><span>2144 ofertas en el periodo</span></div></article><article class="kpi"><div class="kpi-head"><span>Pedidos de cliente automáticos</span><span>%</span></div><div class="kpi-value ">38,9%</div><div class="progress"><span style="width: 97.1939%;"></span></div><div class="kpi-meta"><span>Objetivo 40,0% · 381 de 980 pedidos grabados sin intervención (EDI o portal)</span><span class="delta warn">−1,1 pp</span></div></article></div><div class="pd-measures"><div class="pd-measure empty" title="Cálculo: personas × horas manuales por semana × 52 / 12"><span>Horas de trabajo manual al mes</span><b>—</b></div><div class="pd-measure empty" title="Cálculo: (horas manuales + horas de informes) / 140 h al mes por persona"><span>Equivalente en personas a tiempo completo</span><b>—</b></div><div class="pd-measure empty" title="Cálculo: respuesta del área"><span>Tiempo hasta la oferta</span><b>—</b></div></div><div class="jsx-370e37866c53f1e0 pd-foot"><a class="pd-link" href="dashboard_commercial.html">Abrir cockpit</a><button class="jsx-370e37866c53f1e0 pd-btn">Medirlo ▸</button></div></article><article class="card"><div class="card-head"><div><h2 class="card-title">Finanzas</h2><p class="card-sub">0 de 7 preguntas respondidas</p></div></div><div class="jsx-370e37866c53f1e0 kpis pd-mini"><article class="kpi" title="Coste administrativo de una factura
+Fórmula: process_cost_eur / transactions del proceso Cuentas a pagar
+Hojas: Productividad
+Proceso: Cuentas a pagar (AP)
+Posibles causas (hipótesis): Proceso manual, excepciones, bloqueos
+Automatización: Lectura de facturas con IA, validaciones, conciliación 3-way match"><div class="kpi-head"><span><span class="kpi-star" title="KPI prioritario">★ </span>Coste por factura procesada</span><span>€</span></div><div class="kpi-value ">16</div><div class="progress"><span style="width: 94.2751%;"></span></div><div class="kpi-meta"><span>Máximo 15 · coste de Cuentas a pagar €0,1m</span><span class="delta bad">+1</span></div></article><article class="kpi" title="Tiempo dedicado a tareas manuales
+Fórmula: SUMA(hours_manual) / SUMA(hours_total)
+Hojas: Productividad
+Proceso: Todos los procesos financieros
+Posibles causas (hipótesis): Tareas repetitivas sin automatizar
+Automatización: Automatizaciones de cada proceso (ver Procesos)"><div class="kpi-head"><span>Tiempo administrativo</span><span>%</span></div><div class="kpi-value ">44,6%</div><div class="progress"><span style="width: 67.2017%;"></span></div><div class="kpi-meta"><span>Máximo 30,0% · horas en tareas manuales sobre el total</span><span class="delta bad">+14,6 pp</span></div></article><article class="kpi" title="Operaciones sin intervención humana
+Fórmula: SUMA(automated_transactions) / SUMA(transactions)
+Hojas: Productividad
+Proceso: Todos los procesos financieros
+Posibles causas (hipótesis): Sistemas sin integrar, datos de entrada no estructurados
+Automatización: Automatizaciones de cada proceso (ver Procesos)"><div class="kpi-head"><span>Transacciones automatizadas</span><span>%</span></div><div class="kpi-value ">64,2%</div><div class="progress"><span style="width: 100%;"></span></div><div class="kpi-meta"><span>Objetivo 60,0% · 55.678 de 86.705 transacciones</span><span class="delta good">+4,2 pp</span></div></article></div><div class="pd-measures"><div class="pd-measure empty" title="Cálculo: personas × horas manuales por semana × 52 / 12"><span>Horas de trabajo manual al mes</span><b>—</b></div><div class="pd-measure empty" title="Cálculo: (horas manuales + horas de informes) / 140 h al mes por persona"><span>Equivalente en personas a tiempo completo</span><b>—</b></div><div class="pd-measure empty" title="Cálculo: respuesta del área"><span>Días de cierre</span><b>—</b></div></div><div class="jsx-370e37866c53f1e0 pd-foot"><a class="pd-link" href="dashboard_finance.html">Abrir cockpit</a><button class="jsx-370e37866c53f1e0 pd-btn">Medirlo ▸</button></div></article><article class="card"><div class="card-head"><div><h2 class="card-title">Compras</h2><p class="card-sub">0 de 7 preguntas respondidas</p></div></div><div class="jsx-370e37866c53f1e0 kpis pd-mini"><article class="kpi"><div class="kpi-head"><span>Pedidos por comprador</span><span>#</span></div><div class="kpi-value ">62</div><div class="kpi-meta"><span>620 pedidos · 10 compradores</span></div></article><article class="kpi"><div class="kpi-head"><span>Coste por pedido de compra</span><span>€</span></div><div class="kpi-value ">832</div><div class="kpi-meta"><span>coste de compradores del periodo €0,5m</span></div></article><article class="kpi"><div class="kpi-head"><span>Tiempo administrativo</span><span>%</span></div><div class="kpi-value ">35,1%</div><div class="kpi-meta"><span>horas en tareas manuales sobre el total</span></div></article></div><div class="pd-measures"><div class="pd-measure empty" title="Cálculo: personas × horas manuales por semana × 52 / 12"><span>Horas de trabajo manual al mes</span><b>—</b></div><div class="pd-measure empty" title="Cálculo: (horas manuales + horas de informes) / 140 h al mes por persona"><span>Equivalente en personas a tiempo completo</span><b>—</b></div><div class="pd-measure empty" title="Cálculo: respuesta del área"><span>De la solicitud al pedido</span><b>—</b></div></div><div class="jsx-370e37866c53f1e0 pd-foot"><a class="pd-link" href="dashboard_procurement.html">Abrir cockpit</a><button class="jsx-370e37866c53f1e0 pd-btn">Medirlo ▸</button></div></article><article class="card"><div class="card-head"><div><h2 class="card-title">Supply Chain</h2><p class="card-sub">0 de 7 preguntas respondidas</p></div></div><div class="jsx-370e37866c53f1e0 kpis pd-mini"><article class="kpi" title="Peso del coste logístico
+Fórmula: SUMA(total_logistics_cost_eur) / ingresos
+Hojas: Costes logísticos, Demanda
+Proceso: Todos los procesos logísticos
+Posibles causas (hipótesis): Envíos urgentes, almacenes infrautilizados
+Automatización: Automatizaciones de cada proceso (ver Procesos)"><div class="kpi-head"><span><span class="kpi-star" title="KPI prioritario">★ </span>Coste logístico sobre ventas</span><span>%</span></div><div class="kpi-value ">8,8%</div><div class="progress"><span style="width: 100%;"></span></div><div class="kpi-meta"><span>Máximo 10,0% · €12,5m de coste logístico</span><span class="delta good">−1,2 pp</span></div></article><article class="kpi" title="Coste operativo por pedido
+Fórmula: SUMA(operating_cost_eur) / SUMA(orders_prepared)
+Hojas: Almacenes
+Proceso: Gestión de almacén
+Posibles causas (hipótesis): Baja productividad, tareas manuales
+Automatización: Optimización de rutas de picking, validación con códigos de barras"><div class="kpi-head"><span>Coste por pedido preparado</span><span>€</span></div><div class="kpi-value ">5187</div><div class="progress"><span style="width: 77.1137%;"></span></div><div class="kpi-meta"><span>Máximo 4000 · 498 pedidos preparados</span><span class="delta bad">+1187</span></div></article><article class="kpi" title="Procesos ejecutados sin intervención manual
+Fórmula: SUMA(automated_transactions) / SUMA(transactions)
+Hojas: Productividad
+Proceso: Todos los procesos logísticos
+Posibles causas (hipótesis): Sistemas sin integrar, datos manuales
+Automatización: Automatizaciones de cada proceso (ver Procesos)"><div class="kpi-head"><span>Operaciones automatizadas</span><span>%</span></div><div class="kpi-value ">37,0%</div><div class="progress"><span style="width: 67.3485%;"></span></div><div class="kpi-meta"><span>Objetivo 55,0% · 17.134 de 46.256 operaciones</span><span class="delta bad">−18,0 pp</span></div></article></div><div class="pd-measures"><div class="pd-measure empty" title="Cálculo: personas × horas manuales por semana × 52 / 12"><span>Horas de trabajo manual al mes</span><b>—</b></div><div class="pd-measure empty" title="Cálculo: (horas manuales + horas de informes) / 140 h al mes por persona"><span>Equivalente en personas a tiempo completo</span><b>—</b></div><div class="pd-measure empty" title="Cálculo: respuesta del área"><span>Del pedido a la expedición</span><b>—</b></div></div><div class="jsx-370e37866c53f1e0 pd-foot"><a class="pd-link" href="dashboard_supply-chain.html">Abrir cockpit</a><button class="jsx-370e37866c53f1e0 pd-btn">Medirlo ▸</button></div></article></div></main></section></div></main></div>
+<style>
+#mirai-ro{position:fixed;right:16px;bottom:16px;z-index:2147483647;background:#0b1020;color:#e6e9ef;font:600 12px system-ui,sans-serif;
+padding:8px 12px;border-radius:999px;box-shadow:0 6px 24px rgba(0,0,0,.25);opacity:.92}
+#mirai-ro b{color:#00d8f5}
+#mirai-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:2147483647;background:#1f2937;color:#fff;
+font:500 13px system-ui,sans-serif;padding:10px 16px;border-radius:10px;display:none}
+</style>
+<div id="mirai-ro">MIR<b>[AI]</b> · versión de solo lectura · 12/11/2026</div>
+<div id="mirai-toast">En esta copia de solo lectura no está disponible esta acción.</div>
+<script>
+(function(){
+  var TABS = [];
+  var toast = document.getElementById('mirai-toast'), t;
+  function say(){ toast.style.display='block'; clearTimeout(t); t=setTimeout(function(){toast.style.display='none'},2200) }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a');
+    if (a) { if (a.getAttribute('data-ro') === 'off') { e.preventDefault(); say() } return }
+    var b = e.target.closest('button,[role=tab],[role=radio]');
+    if (!b) return;
+    var txt = (b.innerText || '').replace(/\s+/g,' ').trim();
+    for (var i=0;i<TABS.length;i++){ if (TABS[i][0] && txt.indexOf(TABS[i][0])===0){ e.preventDefault(); location.href = TABS[i][1]; return } }
+    e.preventDefault(); say();
+  }, true);
+  document.addEventListener('submit', function(e){ e.preventDefault(); say() }, true);
+})();
+</script>
+</body></html>
